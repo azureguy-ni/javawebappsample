@@ -17,7 +17,7 @@ node {
   }
   
   stage('deploy') {
-    def resourceGroup = 'jenkinsdemo' 
+    def resourceGroup = 'jenkins-demo' 
     def webAppName = 'AgniMyApp'
     // login Azure
     withCredentials([azureServicePrincipal('Agni-Jenkins-Test-SP')]) {
